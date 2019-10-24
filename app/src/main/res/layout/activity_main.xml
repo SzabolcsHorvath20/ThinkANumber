@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/heart1"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/heart2"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/heart3"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/heart4"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/heart2"
+            android:id="@+id/heart5"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Találd ki a számot!"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/textview1"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:text="+"
+        android:textSize="50sp"
+        android:id="@+id/buttonplus"
+        android:background="#21becf" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonplus"
+        android:id="@+id/textviewnumber"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:text="0"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textviewnumber"
+        android:layout_centerHorizontal="true"
+        android:text="-"
+        android:textSize="50sp"
+        android:id="@+id/buttonminus"
+        android:background="#69cf21" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Küldés"
+        android:textSize="50sp"
+        android:background="#e36d32"
+        android:id="@+id/buttonsend"/>
+
+
+</RelativeLayout>
